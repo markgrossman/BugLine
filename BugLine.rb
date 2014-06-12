@@ -8,7 +8,7 @@ rally = RallyAPI::RallyRestJson.new(@config)
 fields = {}
 fields['Name'] = ARGV[0]
 fields['Project'] = '<projectId>'
-fields['SubmittedBy'] = '<userId'
+fields['SubmittedBy'] = '<userId>'
 
 new_defect = rally.create('defect', fields)
 
